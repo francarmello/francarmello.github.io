@@ -5,27 +5,120 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projeto BI Mercado Financeiro</title>
 <style>
-body{font-family:Arial,sans-serif;background:#121212;color:#fff;margin:0;padding:0}
-header{padding:80px 20px;text-align:center;background:#1e1e1e}
-h1{font-size:48px;margin:0}
-p.sub{opacity:.8}
-.container{width:90%;max-width:1200px;margin:auto;padding:40px 0}
-.card{background:#1e1e1e;border-radius:16px;padding:25px;margin-bottom:25px;box-shadow:0 6px 20px rgba(0,0,0,.3)}
-img{width:100%;border-radius:12px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.footer{text-align:center;opacity:.7;padding:20px}
+body{
+font-family:Arial,sans-serif;
+background:#121212;
+color:#fff;
+margin:0;
+padding:0;
+}
+
+header{
+padding:90px 20px;
+text-align:center;
+background:#1e1e1e;
+}
+
+h1{
+font-size:56px;
+line-height:1.1;
+margin:0;
+}
+
+.sub{
+opacity:.8;
+margin-top:15px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 22px;
+margin:8px;
+border-radius:12px;
+background:#2ECC71;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:40px 0;
+}
+
+.card{
+background:#1e1e1e;
+border-radius:16px;
+padding:35px;
+margin-bottom:25px;
+box-shadow:0 6px 20px rgba(0,0,0,.3);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.metrics{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+margin-bottom:25px;
+}
+
+.metric{
+background:#1e1e1e;
+padding:20px;
+text-align:center;
+border-radius:16px;
+font-size:18px;
+}
+
+img{
+width:100%;
+border-radius:12px;
+}
+
+.footer{
+text-align:center;
+opacity:.7;
+padding:30px;
+}
+
+a{
+color:#2ECC71;
+}
 </style>
 </head>
 <body>
+
 <header>
 <h1>Projeto BI Mercado Financeiro</h1>
 <p class="sub">Pipeline completo: Python → PostgreSQL → ETL → Power BI</p>
+
+<div style="margin-top:25px;">
+<a href="#dashboard" class="btn">Ver Dashboard</a>
+<a href="https://github.com/francarmello/projeto-bi-mercado-financeiro" class="btn">GitHub</a>
+</div>
 </header>
+
 <div class="container">
+
+<div class="metrics">
+<div class="metric">📈 5 Ativos analisados</div>
+<div class="metric">📅 +5 anos históricos</div>
+<div class="metric">🗄️ 3 tabelas DW</div>
+<div class="metric">📊 Dashboard executivo</div>
+</div>
+
 <div class="card">
 <h2>Sobre o projeto</h2>
-<p>Sistema completo de Business Intelligence utilizando dados financeiros públicos do Yahoo Finance. O projeto contempla coleta automatizada, modelagem SQL em estrela, ETL, análise e dashboard executivo.</p>
+<p>Sistema completo de Business Intelligence utilizando dados públicos do Yahoo Finance. O projeto contempla coleta automatizada, modelagem SQL em estrela, ETL, análise e dashboard executivo.</p>
 </div>
+
 <div class="grid">
 <div class="card">
 <h3>Tecnologias</h3>
@@ -35,37 +128,49 @@ img{width:100%;border-radius:12px}
 <li>PostgreSQL</li>
 <li>SQL</li>
 <li>Power BI</li>
+<li>GitHub Pages</li>
 </ul>
 </div>
+
 <div class="card">
 <h3>Pipeline</h3>
-<p>Yahoo Finance → Python → PostgreSQL → DW → Power BI</p>
+<p>Yahoo Finance → Python → Pandas → PostgreSQL → DW → Power BI</p>
 </div>
 </div>
+
 <div class="card">
 <h2>Pipeline de Dados</h2>
-<img src="imagens/pipeline.png" alt="pipeline">
+<img src="imagens/pipeline.png">
 </div>
+
 <div class="card">
 <h2>Arquitetura - Modelo Estrela</h2>
-<img src="imagens/modelo_estrela.png" alt="arquitetura">
+<img src="imagens/modelo_estrela.png">
 </div>
-<div class="card">
+
+<div class="card" id="dashboard">
 <h2>Dashboard Power BI</h2>
-<img src="imagens/dashboard.png" alt="Dashboard Power BI">
+<img src="imagens/dashboard.png">
 </div>
+
 <div class="card">
 <h2>Principais Insights</h2>
 <ul>
-<li>Comparação risco x retorno</li>
-<li>Heatmap de performance mensal</li>
-<li>Ranking de ativos</li>
-<li>Análise histórica de fechamento</li>
+<li>📈 Comparação entre risco x retorno dos ativos</li>
+<li>📊 Heatmap de performance mensal</li>
+<li>🏆 Ranking de performance acumulada</li>
+<li>⚡ Indicadores de volatilidade</li>
 </ul>
 </div>
+
 </div>
+
 <div class="footer">
-Dados: Yahoo Finance | Desenvolvido por Francisco Carmello
+Dados: Yahoo Finance<br><br>
+<a href="https://github.com/francarmello">GitHub</a> | 
+<a href="https://www.linkedin.com/in/franciscocarmello/">LinkedIn</a><br><br>
+Desenvolvido por Francisco Carmello
 </div>
+
 </body>
 </html>
