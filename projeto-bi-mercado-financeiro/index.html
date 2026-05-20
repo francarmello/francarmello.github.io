@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projeto BI Mercado Financeiro</title>
+<style>
+body{font-family:Arial,sans-serif;background:#121212;color:#fff;margin:0;padding:0}
+header{padding:80px 20px;text-align:center;background:#1e1e1e}
+h1{font-size:48px;margin:0}
+p.sub{opacity:.8}
+.container{width:90%;max-width:1200px;margin:auto;padding:40px 0}
+.card{background:#1e1e1e;border-radius:16px;padding:25px;margin-bottom:25px;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+img{width:100%;border-radius:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.footer{text-align:center;opacity:.7;padding:20px}
+</style>
+</head>
+<body>
+<header>
+<h1>Projeto BI Mercado Financeiro</h1>
+<p class="sub">Pipeline completo: Python → PostgreSQL → ETL → Power BI</p>
+</header>
+<div class="container">
+<div class="card">
+<h2>Sobre o projeto</h2>
+<p>Sistema completo de Business Intelligence utilizando dados financeiros públicos do Yahoo Finance. O projeto contempla coleta automatizada, modelagem SQL em estrela, ETL, análise e dashboard executivo.</p>
+</div>
+<div class="grid">
+<div class="card">
+<h3>Tecnologias</h3>
+<ul>
+<li>Python</li>
+<li>Pandas</li>
+<li>PostgreSQL</li>
+<li>SQL</li>
+<li>Power BI</li>
+</ul>
+</div>
+<div class="card">
+<h3>Pipeline</h3>
+<p>Yahoo Finance → Python → PostgreSQL → DW → Power BI</p>
+</div>
+</div>
+<div class="card">
+<h2>Pipeline de Dados</h2>
+<img src="imagens/pipeline.png" alt="pipeline">
+</div>
+<div class="card">
+<h2>Arquitetura - Modelo Estrela</h2>
+<img src="imagens/modelo_estrela.png" alt="arquitetura">
+</div>
+<div class="card">
+<h2>Dashboard Power BI</h2>
+<img src="imagens/dashboard.png" alt="Dashboard Power BI">
+</div>
+<div class="card">
+<h2>Principais Insights</h2>
+<ul>
+<li>Comparação risco x retorno</li>
+<li>Heatmap de performance mensal</li>
+<li>Ranking de ativos</li>
+<li>Análise histórica de fechamento</li>
+</ul>
+</div>
+</div>
+<div class="footer">
+Dados: Yahoo Finance | Desenvolvido por Francisco Carmello
+</div>
+</body>
+</html>
